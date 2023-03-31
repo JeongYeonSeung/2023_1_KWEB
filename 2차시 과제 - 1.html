@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWEB Survey Page</title>
+</head>
+<body>
+    <div id="page-header">
+        <h2>KWEB Survey Page</h2>
+        <div id="logo">
+            <img src="https://i.imgur.com/hSSFVSw.png"
+                 alt="KWEB Logo"
+                 width=250>
+        </div>
+        <a href="https://kwebofficial.com/" title="KWEB Hompage">KWEB Hompage</a>
+    </div>
+
+    <div id="page-body">
+        <div class="survey-question">
+            <h3>1. Write your name.</h3>
+            <input type="text" name="username">
+        </div>
+        <div class="survey-question">
+            <h3>2. Write your student number.</h3>
+            <input type="text" name="studentnumber">
+        </div>
+        <div class="survey-question">
+            <h3>3. Select your member level.</h3>
+            <label><input type="radio" name="memberlevel" value="admin">Admin</label>
+            <label><input type="radio" name="memberlevel" value="intern">intern</label>
+            <label><input type="radio" name="memberlevel" value="qualified">qualified</label>
+        </div>
+        <div class="survey-question">
+            <h3>4. Select all fields you are interested in.</h3>
+            <label><input type="checkbox" name="field" value="frontend">Front-end</label>
+            <label><input type="checkbox" name="field" value="backend">Back-end</label>
+            <label><input type="checkbox" name="field" value="webcrawling">Web crawling</label>
+            <label><input type="checkbox" name="field" value="websequrity">Web sequrity</label>
+            <label><input type="checkbox" name="field" value="etcetera">Etcetera</label>
+            <label><input type="text" name="etc"></label>
+        </div>
+        <div class="survey-question">
+            <h3>5. Give us overall evalution and feedback about previous study.</h3>
+            <textarea cols="72" rows="15" 
+                      placeholder="Fun!"
+                      name="feedback">
+            </textarea>
+        </div>
+        <div id="submit-button">
+            <button type="submit">Submit your answers</button>
+        </div>
+    </div>
+</body>
+</html>
